@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script type="text/javascript">
+<!--
+    function show_result() {
+         
+        var e = document.getElementById('mytable');
+        //var el = $('<div id="mysrc">').append('Test message here');
+          e.style.display = 'block';
+          color='white';
+          //document.getElementById("mysrc").value=document.getElementById("source").innerHTML;
+          show_result2();
+          
+    }
+    function show_result2() {
+        //$("mysrc").text("eeee");
+     }
+//-->
+</script>
+    <style>
+body { 
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    </style>
+    </head>    
+
+<body >
+<div class = "container">
+	<div class="wrapper">
+		<form action="" method="post" name="Login_Form" class="form-signin">       
+		    <h3 class="form-signin-heading">Enter source and destination city!</h3>
+			  <hr class="colorgraph"><br>
+			  
+			  <input type="text" class="form-control" id="source" placeholder="Source city" required="" autofocus="" />
+			  <input type="text" class="form-control" name="destination" placeholder="Destination city" required=""/>     		  
+			 <input type="text" class="form-control" name="date" placeholder="Departure Date" required=""/>
+                         <button class="btn btn-lg btn-primary btn-block" onclick="show_result();"  name="Submit" value="Lets_travel" type="button">Lets Travel!!!</button>  			
+		</form>			
+	</div>
+</div>
+
+    
+    <div id="mytable" style="display:none; " text-decoration-color: white|initial|inherit; >
+        <div class="container">
+  <h2>Available Trains</h2>
+              
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>Train Name</th>
+        <th>Start City</th>
+        <th>End City</th>
+        <th>Departure Date</th>
+        <th>Fare</th>
+        <th>WIFI facility?</th>
+        <th>Meals Facility?</th>
+        <th>AC Sleeper?</th>
+        <th>Lower AC?</th>
+        <th>Economy?</th>
+        <th>Parlour?</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rawalpindi Express</td>
+        <td id="mysrc">
+            Islamabad
+        </td>
+        <td>john@example.com</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>John</td>
+        <td>Doe</td>
+        
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>John</td>
+        <td>Doe</td>
+        
+      
+    </tbody>
+    
+  </table>
+  <a href="href=www.lahore.com"><button class="btn btn-lg btn-primary btn-block" style =" background: red; width : 200px; "  name="Submit" value="but" type="button">New to Lahore ?</button></a>
+ <a href="www.lahore.com">New to Lahore</a>
+        </div>
+  
+
+        
+    </div>
+    </body>
+</html>
