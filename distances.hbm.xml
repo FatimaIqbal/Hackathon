@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2015 6:57:35 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.pojo.Distances" table="distances" catalog="db">
+        <composite-id name="id" class="model.pojo.DistancesId">
+            <key-property name="placeA" type="string">
+                <column name="placeA" length="50" />
+            </key-property>
+            <key-property name="placeB" type="string">
+                <column name="placeB" length="50" />
+            </key-property>
+        </composite-id>
+        <property name="distance" type="java.lang.Integer">
+            <column name="distance" />
+        </property>
+    </class>
+</hibernate-mapping>
